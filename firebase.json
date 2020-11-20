@@ -1,0 +1,11 @@
+{
+   "emulators": {
+      "functions": {
+         "host": "192.168.0.160",
+         "port": 5001
+      },
+      "ui": {
+         "enabled": false
+      }
+   }
+}
