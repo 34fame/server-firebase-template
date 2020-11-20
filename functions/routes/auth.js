@@ -1,9 +1,10 @@
+require('dotenv').config()
 const jwt = require('express-jwt')
 const jwks = require('jwks-rsa')
 const { fireauth } = require('../services/firebase/init')
 
-const AUTH0_DOMAIN = '34fame.us.auth0.com'
-const AUTH0_AUDIENCE = 'https://api-dev.ibofk.com'
+const AUTH0_DOMAIN = process.env.AUTH0_DOMAIN
+const AUTH0_AUDIENCE = process.env.AUTH0_AUDIENCE
 
 module.exports = function (app) {
    const jwtCheck = jwt({
